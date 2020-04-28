@@ -47,3 +47,5 @@ After "npm install" execution is complete, we can enter "npm test" or "npm start
 the option to edit code and restart execution by entering "rs". This is very handy for debugging. For a simple, single run - you can instead use
 "npm start". After execution, you should see that a file named "helloworld2.png" has been created within the directory containing "main.js". 
 Opening the file, you will be able to see the rendered business flow diagram.
+
+After the successful execution of both "npm start" and "npm test", it is time to deploy the app to a server. The steps for this can be found in the README file inside of the "business_mapper" folder.
