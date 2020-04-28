@@ -1,4 +1,4 @@
-To execute deployment of the application, first open the Business_Mapper folder and delete the "package-lock.json" file and the "node_modules" folder (if one exists). Then, open the "dist" folder and right-click on the "Main.js" file. Select "Open Developer Command Prompt" and run the command "yarn install". 
+To execute deployment of the application, first open the Business_Mapper folder and delete the "package-lock.json" file, yarn.lock file, and the "node_modules" folder (if they exist). Then, open the "dist" folder and right-click on the "Main.js" file. Select "Open Developer Command Prompt" and run the command "yarn install". 
 
 After the command execution is complete, try running "yarn start". If that is successful, run the command "yarn test".
 
