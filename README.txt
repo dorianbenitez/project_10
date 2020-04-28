@@ -32,7 +32,7 @@ This can also be installed to it's default location of "C:\libjpeg-turbo64".
 Now that we have installed all dependencies, we can install node-canvas by entering the command "npm install canvas" from the command line as an administrator.
 
 Now, open the master folder containing our code "project_10-master" in Visual Studio. In the Solution Explorer sidebar, we see a folder 
-called "node_modules" and a file called "package-lock.json" (If you cannot see node_modules folder, try selecting "show all files"). We want to delete both of those. After the node_modules folder and package-lock.json file is deleted, we can open the "src" folder. Within, you should see "server.js" and "main.js" files. Right click on "main.js" file and click on
+called "node_modules" and a file called "package-lock.json" (If you cannot see node_modules folder, try selecting "show all files"). We want to delete both of those. After the node_modules folder and package-lock.json file are deleted, we can open the "src" folder. Within, you should see "server.js" and "main.js" files. Right click on "main.js" file and click on
 "Open Developer Command Prompt". 
 
 Before we run main.js, we need to install some dependencies first. Again, please be sure that you are running the IDE as an administrator. Then, from the developer command prompt, run the following lines in parentheses to install dependencies:
@@ -41,7 +41,7 @@ Nodemon (npm install --save-dev nodemon)
 Esm (npm install --save esm)
 Fabric (npm install --save-dev fabric)
 
-After each of those commands have executed successfuly, we can run "npm install". 
+After each of those commands have executed successfuly, we can run the command "npm install". 
 
 After "npm install" execution is complete, we can enter "npm test" or "npm start". "npm test" will not exit on generation of the .png, and leaves 
 the option to edit code and restart execution by entering "rs". This is very handy for debugging. For a simple, single run - you can instead use
