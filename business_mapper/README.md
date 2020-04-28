@@ -3,7 +3,7 @@ To execute deployment of the application, first open the Business_Mapper folder 
 After the command execution is complete, try running "yarn start". If that is successful, run the command "yarn test".
 
 
-/* OPTIONAL */     IF YOU ARE RECEIVING ERRORS IN "yarn test" OR "yarn start":
+### /* OPTIONAL */     IF YOU ARE RECEIVING ERRORS IN "yarn test" OR "yarn start":
 
 If you are receiving an error regarding babel-loader compatability, run the following:
   "npm ls babel-loader"   // to see the dependency versions you maintain
@@ -17,7 +17,7 @@ If you are receiving an error regarding babel-loader compatability, run the foll
   - Run the command "yarn install" in the developer prompt
   - After that is done, try running the commands "yarn start" and "yarn test"
   
-  /* END OF OPTIONAL SECTION */
+  ### /* END OF OPTIONAL SECTION */
   
   
   If the command "yarn test" executes successfully, then the app is ready to be deployed. Now, we run the command "yarn build".
