@@ -34,7 +34,7 @@ If you are receiving an error regarding babel-loader compatability, run the foll
   
   Now that we have a local server running pointed to the "main.js" file in the "Business_Mapper" --> "div" directory, we can now build 
   our app. Once again, open Visual Studio and open a new Developer Command Prompt by clicking on the same "main.js" file that the server 
-  is running in, and run the command "yarn build". 
+  is running in, and run the command "yarn build".
   
   After a successful build, we can open a web broswer app (i.e. Google Chrome, Firefox, etc.) and visit the "localhost:3000" URL.
   If our build is functional, we should see the Perspecta app homepage. 
