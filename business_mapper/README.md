@@ -18,6 +18,11 @@ If you are receiving an error regarding babel-loader compatability, run the foll
   - Run the command "yarn install" in the developer prompt
   - After that is done, try running the commands "yarn start" and "yarn test"
   
+  
+  If receiving an error regarding weback or webpack-cli compatability:
+  1. yarn add webpack@4.41.2 --dev
+  2. yarn add webpack-cli@3.3.10 --dev
+  
   ### /* END OF OPTIONAL SECTION */
   
   
