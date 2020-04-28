@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To execute deployment of the user interface, enter the "dist" folder inside of Business_Mapper and right-click on the Main.js file.
+Select "open developer command prompt" and 
+
 ## Available Scripts
 
 In the project directory, you can run:
