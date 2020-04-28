@@ -6,10 +6,11 @@ After the command execution is complete, try running "yarn start". If that is su
 ### /* OPTIONAL */     IF YOU ARE RECEIVING ERRORS IN "yarn test" OR "yarn start":
 
 If you are receiving an error regarding babel-loader compatability, run the following:
-  "npm ls babel-loader"   // to see the dependency versions you maintain
-  "npm r babel-loader"    
-  "npm start"
-  "npm test"
+
+  1. "npm ls babel-loader"   // to see the dependency versions you maintain
+  2. "npm r babel-loader"    
+  3. "npm start"
+  4. "npm test"
   
   If you are still running into errors about babel-loader, follow these steps: 
   - Delete the package-lock.json file, the "yarn.lock" file, and the "node_modules" folder. 
