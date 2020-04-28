@@ -8,7 +8,8 @@ After the command execution is complete, try running "yarn start". If that is su
 If you are receiving an error regarding babel-loader compatability, run the following:
 
   1. "npm ls babel-loader"   // to see the dependency versions you maintain
-  2. "npm r babel-loader"    
+  2a. "npm r babel-loader"   // run this if there are multiple babel-loader files
+  2b. "yarn add babel-loader@8.0.6 -- dev"  // run this if the version is not 8.0.6
   3. "npm start"
   4. "npm test"
   
