@@ -48,3 +48,5 @@ After installation of these dependencies is complete, enter "npm test" or "npm s
 the option to edit code and restart execution by entering "rs". This is very handy for debugging. For a simple, single run - you can instead use
 "npm start". After execution, you should see that a file named "helloworld2.png" has been created within the directory containing "main.js". 
 Opening the file, you will be able to see the rendered business flow diagram.
+
+If you are running into errors when executing "npm start" or "npm test", try deleting the "package-lock.json" file and the "node_modules" folder from the solution. After they are both deleted, try running "npm install" again. After that completes, try running "npm start" and "npm test" again. If erros continue, you may be missing the installation of some dependencies. 
