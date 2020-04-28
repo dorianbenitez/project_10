@@ -20,8 +20,8 @@ If you are receiving an error regarding babel-loader compatability, run the foll
   
   
   If receiving an error regarding weback or webpack-cli compatability:
-  1. yarn add webpack@4.41.2 --dev
-  2. yarn add webpack-cli@3.3.10 --dev
+  1. yarn add webpack@4.41.2 --dev         // run this to install the dependency for webpack
+  2. yarn add webpack-cli@3.3.10 --dev     // run this to install the dependency for webpack-cli
   
   ### /* END OF OPTIONAL SECTION */
   
