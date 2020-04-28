@@ -8,10 +8,10 @@ After the command execution is complete, try running "yarn start". If that is su
 If you are receiving an error regarding babel-loader compatability, run the following:
 
   1. "npm ls babel-loader"   // to see the dependency versions you maintain
-  2a. "npm r babel-loader"   // run this if there are multiple babel-loader files
-  2b. "yarn add babel-loader@8.0.6 -- dev"  // run this if the version is not 8.0.6
-  3. "npm start"
-  4. "npm test"
+  2. "npm r babel-loader"   // run this if there are multiple babel-loader files
+  3. "yarn add babel-loader@8.0.6 -- dev"  // run this if the installed version is not 8.0.6
+  4. "npm start"
+  5. "npm test"
   
   If you are still running into errors about babel-loader, follow these steps: 
   - Delete the package-lock.json file, the "yarn.lock" file, and the "node_modules" folder. 
