@@ -27,8 +27,8 @@ If you are receiving an error regarding babel-loader compatability, run the foll
   
   To initiate deployment, we first need to create a local server for us to run our app on. To accomplish this, we stay in the 
   same developer command prompt and run the following commands:
-    1. npm install -g serve     // Installs the package for us to create a local server
-    2. serve --listen 3000      // Initiates a server that runs on localhost:3000
+    - npm install -g serve     // Installs the package for us to create a local server
+    - serve --listen 3000      // Initiates a server that runs on localhost:3000
     
   
   Now that we have a local server running pointed to the "main.js" file in the "Business_Mapper" --> "div" directory, we can now build 
