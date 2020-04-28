@@ -9,7 +9,7 @@ If you are receiving an error regarding babel-loader compatability, run the foll
 
   1. "npm ls babel-loader"   // to see the dependency versions you maintain
   2. "npm r babel-loader"   // run this if there are multiple babel-loader files
-  3. "yarn add babel-loader@8.0.6 -- dev"  // run this if the installed version is not 8.0.6
+  3. "yarn add babel-loader@8.0.6 --dev"  // run this if the installed version is not 8.0.6
   4. "npm start"
   5. "npm test"
   
