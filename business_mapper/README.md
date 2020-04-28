@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To execute deployment of the application, first open the Business_Mapper folder and delete the "package-lock.json" file and the "node_modules" folder (if one exists). Then, open the "dist" folder and right-click on the "Main.js" file. Select "Open Developer Command Prompt" and run the command "yarn install". 
 
-To execute deployment of the application, first open the Business_Mapper folder and delete the "package-lock.json" file and the "node_modules" folder if one exists. Then, open the "dist" folder and right-click on the Main.js file. Select "open developer command prompt" and run the command "yarn install". 
-
-After that command execution is complete, try running "yarn start". If that is successful, run the command "yarn test".
+After the command execution is complete, try running "yarn start". If that is successful, run the command "yarn test".
 
 
 /* OPTIONAL */     IF YOU ARE RECEIVING ERRORS IN "yarn test" OR "yarn start":
@@ -33,11 +31,12 @@ If you are receiving an error regarding babel-loader compatability, run the foll
     2. serve --listen 3000      // Initiates a server that runs on localhost:3000
     
   
-  Now that we have a local server running pointed to the "main.js" file in the "Business_Mapper" --> "div" directory, we can build our 
-  app. Once again, open Visual Studio and open a new Developer Command Prompt by clicking on the same "main.js" file in Business_Mapper
-  and run the command "yarn build". 
+  Now that we have a local server running pointed to the "main.js" file in the "Business_Mapper" --> "div" directory, we can now build 
+  our app. Once again, open Visual Studio and open a new Developer Command Prompt by clicking on the same "main.js" file that the server 
+  is running in, and run the command "yarn build". 
   
-  After a successful build, we can open a web broswer app (i.e. Google Chrome, Firefox, etc.) and visit the "localhost:3000" URL. 
+  After a successful build, we can open a web broswer app (i.e. Google Chrome, Firefox, etc.) and visit the "localhost:3000" URL.
+  If our build is functional, we should see the Perspecta app homepage. 
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
