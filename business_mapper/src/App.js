@@ -14,7 +14,6 @@ function App() {
 
           <div className="App-logo">
               <img src="https://perspecta.com/sites/default/files/perspecta_logo_tm_0.png" alt="logo" id="bigpic" />
-              <img src="/project_10/src/helloworld2.png" alt="logo" />
           </div>
 
           <div className="navbar">
@@ -30,10 +29,9 @@ function App() {
                     <input type="file" name="theFile" id="theFile" />
                   </a>
 
-                  <a download="Business_Mapper_Diagram">
-                      <label for="DownloadFile">Save As...</label>
-                      <input type="button" value="Save As..." id="DownloadFile" /> 
-                  </a> 
+                      <a href="#" download="Business_Mapper_Diagram">
+                          Save As...
+                      </a> 
 
                       <a href="#">Close</a>
               </div>
