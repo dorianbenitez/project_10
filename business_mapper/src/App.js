@@ -3,12 +3,21 @@ import React from 'react';
 // import logo from './perspecta_logo_tm_0.png';
 import './App.css';
 
+
+function openAttachment() {
+    document.getElementById('attachment').click();
+}
+
+function fileSelected(input) {
+    document.getElementById('btnAttachment').value = "File: " + input.files[0].name
+}
+
 function App() {
   return (
       <div className="App">
 
           <div className="App-logo">
-              <img src="https://perspecta.com/sites/default/files/perspecta_logo_tm_0.png" alt="logo" />
+              <img src="https://perspecta.com/sites/default/files/perspecta_logo_tm_0.png" alt="logo" id="bigpic" />
           </div>
 
           <div className="navbar">
@@ -18,14 +27,14 @@ function App() {
               </button>
               <div className="dropdown-content">
                   <a href="#"> New </a>
-                  <a href="#"> Open
-                    <input type="button" id="get_file" value="Grab file" />
-                    <input type="file" id="my_file" />
+                  <a>
+                    <label for="theFile">Open </label>
+                    <input type="file" name="theFile" id="theFile" />
                   </a>
                   <a href="#">Save</a>
                   <a href="#">Save As...</a>
                   <a href="#">Export as PDF</a>
-                  <a href="#">Close</a>
+                      <a href="#">Close</a>
               </div>
               </div>
 

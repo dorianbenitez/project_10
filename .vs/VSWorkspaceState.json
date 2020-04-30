@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\business_mapper",
-    "\\business_mapper\\public",
+    "\\business_mapper\\dist",
     "\\business_mapper\\src",
-    "\\Components",
     "\\src"
   ],
-  "SelectedNode": "\\business_mapper\\src\\App.css",
+  "SelectedNode": "\\business_mapper\\dist\\main.js",
   "PreviewInSolutionExplorer": false
 }

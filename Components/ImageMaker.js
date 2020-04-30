@@ -13,7 +13,7 @@ export class ImageMaker {
     // creates and saves the image to the local machine
     make_Image(canvas) {
         // create a stream to place image in a file and save
-        const out = fs.createWriteStream(__dirname + "/helloworld2.png");
+        const out = fs.createWriteStream("/project_10/src/helloworld2.png");
         
         // when there is data write to stream
         this.Stream.on('data', chunk => {
