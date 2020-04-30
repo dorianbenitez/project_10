@@ -1,34 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To execute deployment of the application, first open the Business_Mapper folder and delete the "package-lock.json" file, the "yarn.lock" file, and the "node_modules" folder (if they exist). Then, open the "dist" folder and right-click on the "Main.js" file. Select "Open Developer Command Prompt" and run the command "yarn install". 
 
-To execute deployment of the user interface, enter the "dist" folder inside of Business_Mapper and right-click on the Main.js file.
-Select "open developer command prompt" and 
+After the command execution is complete, try running "yarn start". If that is successful, run the command "yarn test".
 
-## Available Scripts
 
-In the project directory, you can run:
+### /* OPTIONAL */     IF YOU ARE RECEIVING ERRORS IN "yarn test" OR "yarn start":
 
-### `yarn start`
+If you are receiving an error regarding babel-loader compatability, run the following:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  1. "npm ls babel-loader"   // to see the dependency versions you maintain
+  2. "npm r babel-loader"   // run this if there are multiple babel-loader files
+  3. "yarn add babel-loader@8.0.6 --dev"  // run this if the installed version is not 8.0.6
+  4. "npm start"
+  5. "npm test"
+  
+  If you are still running into errors about babel-loader, follow these steps: 
+  - Delete the package-lock.json file, the "yarn.lock" file, and the "node_modules" folder. 
+  - Go to the "package.json" file and delete the line with "babel-loader" as a dependency
+  - Run the command "yarn install" in the developer prompt
+  - After that is done, try running the commands "yarn start" and "yarn test"
+  
+  
+  If receiving an error regarding weback or webpack-cli compatability:
+  1. yarn add webpack@4.41.2 --dev         // run this to install the dependency for webpack
+  2. yarn add webpack-cli@3.3.10 --dev     // run this to install the dependency for webpack-cli
+  
+  ### /* END OF OPTIONAL SECTION */
+  
+  
+  If the command "yarn test" executes successfully, then the app is ready to be deployed. Now, we run the command "yarn build".
+  "Yarn build" will build the app for us that will be used for deployment. It correctly bundles React in production mode and opts 
+  the build for the best performance. After a successful build execution, the app is ready to be deployed.
+  
+  
+  To initiate deployment, we first need to create a local server for us to run our app on. To accomplish this, we stay in the 
+  same developer command prompt and run the following commands:
+  
+  1. npm install -g serve     // Installs the package for us to create a local server
+  2. serve --listen 3000      // Initiates a server that runs on localhost:3000
+    
+  
+  Now that we have a local server running pointed to the "main.js" file in the "Business_Mapper" --> "div" directory, we can now build 
+  our app. Once again, open Visual Studio and open a new Developer Command Prompt by clicking on the same "main.js" file that the server 
+  is running in, and run the command "yarn build".
+  
+  After a successful build, we can open a web broswer app (i.e. Google Chrome, Firefox, etc.) and visit the "localhost:3000" URL.
+  If our build is functional, we should see the Perspecta app homepage. 
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
 
 ### `yarn eject`
 

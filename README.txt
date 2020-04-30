@@ -29,26 +29,23 @@ Extract the contents to "C:\GTK".
 Now install libjpeg-turbo for jpeg support from here: http://sourceforge.net/projects/libjpeg-turbo/files/
 This can also be installed to it's default location of "C:\libjpeg-turbo64".
 
-Now that we have installed all dependencies, we can install node-canvas by entering the command "npm install canvas" from the command line
-as an administrator.
+Now that we have installed all dependencies, we can install node-canvas by entering the command "npm install canvas" from the command line as an administrator.
 
-Now, open the master folder containing our code "project_10-master" in Visual Studio. In the Solution Explorer sidebar, open the corresponding 
-subdirectory. Within, you should see files like "Shape.js", "colorMap.js", and "main.js". Right click on "main.js" and click on
+Now, open the master folder containing our code "project_10-master" in Visual Studio. In the Solution Explorer sidebar, we see a folder 
+called "node_modules" and a file called "package-lock.json" (If you cannot see node_modules folder, try selecting "show all files"). We want to delete both of those. After the node_modules folder and package-lock.json file are deleted, we can open the "src" folder. Within, you should see "server.js" and "main.js" files. Right click on "main.js" file and click on
 "Open Developer Command Prompt". 
 
-Before we run main.js, we need to install some dependencies first. Again, please be sure that you are running the IDE as an administrator.
-These are:
+Before we run main.js, we need to install some dependencies first. Again, please be sure that you are running the IDE as an administrator. Then, from the developer command prompt, run the following lines in parentheses to install dependencies:
+
 Nodemon (npm install --save-dev nodemon)
 Esm (npm install --save esm)
 Fabric (npm install --save-dev fabric)
 
-Enter each of the above "npm install" commands within the terminal. 
+After each of those commands have executed successfuly, we can run the command "npm install". 
 
-After installation of these dependencies is complete, enter "npm test" or "npm start". "npm test" will not exit on generation of the .png, and leaves 
+After "npm install" execution is complete, we can enter "npm test" or "npm start". "npm test" will not exit on generation of the .png, and leaves 
 the option to edit code and restart execution by entering "rs". This is very handy for debugging. For a simple, single run - you can instead use
 "npm start". After execution, you should see that a file named "helloworld2.png" has been created within the directory containing "main.js". 
 Opening the file, you will be able to see the rendered business flow diagram.
 
-If you are running into errors when executing "npm start" or "npm test", try deleting the "package-lock.json" file and the "node_modules" 
-folder from the solution. After they are both deleted, try running "npm install" again. After that completes, try running "npm start" and 
-"npm test" again. If erros continue, you may be missing the installation of some dependencies. 
+After the successful execution of both "npm start" and "npm test", it is time to deploy the app to a server. The steps for this can be found in the README file inside of the "business_mapper" folder.
