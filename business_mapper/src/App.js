@@ -8,32 +8,33 @@ function openAttachment() {
     document.getElementById('attachment').click();
 }
 
-function fileSelected(input) {
-    document.getElementById('btnAttachment').value = "File: " + input.files[0].name
-}
-
 function App() {
   return (
       <div className="App">
 
           <div className="App-logo">
               <img src="https://perspecta.com/sites/default/files/perspecta_logo_tm_0.png" alt="logo" id="bigpic" />
+              <img src="/project_10/src/helloworld2.png" alt="logo" />
           </div>
 
           <div className="navbar">
               <div className="dropdown">
               <button className="dropbtn"> File
                       <i className="fa fa-caret-down"></i>
-              </button>
+                  </button>
+
               <div className="dropdown-content">
                   <a href="#"> New </a>
                   <a>
                     <label for="theFile">Open </label>
                     <input type="file" name="theFile" id="theFile" />
                   </a>
-                  <a href="#">Save</a>
-                  <a href="#">Save As...</a>
-                  <a href="#">Export as PDF</a>
+
+                  <a download="Business_Mapper_Diagram">
+                      <label for="DownloadFile">Save As...</label>
+                      <input type="button" value="Save As..." id="DownloadFile" /> 
+                  </a> 
+
                       <a href="#">Close</a>
               </div>
               </div>
